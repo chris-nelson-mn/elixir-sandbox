@@ -5,7 +5,8 @@ defmodule Geometry.Rectangle do
 end
 
 defmodule Geometry.Circle do
-  def area(r) do
-    3.1415926 * r * r
-  end
+  @pi 3.1415926
+
+  def circumference(r), do: 2 * @pi * r
+  def area(r),          do: @pi * r * r
 end
